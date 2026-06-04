@@ -1,0 +1,380 @@
+[
+  {
+    "id": "kb-001",
+    "title": "Toast Go 2 Handheld Won't Turn On or Respond",
+    "category": "Hardware - Handheld",
+    "keywords": [
+      "handheld",
+      "toast go",
+      "black screen",
+      "unresponsive",
+      "won't turn on",
+      "dead",
+      "not turning on",
+      "frozen"
+    ],
+    "summary": "The Toast Go 2 handheld is black or completely unresponsive. This is usually a power or battery issue solvable with a hard reboot.",
+    "steps": [
+      "Inspect the charging cable for physical frays or broken rubber coating.",
+      "Ensure the device has been charging for at least 30 minutes before evaluating.",
+      "Perform a Hard Reboot: Press and hold both the Volume Up AND Power buttons simultaneously for exactly 8 to 15 seconds until the Toast logo appears. Do not hold Volume Up alone."
+    ],
+    "escalate_if": "Screen remains black after a hard reboot while plugged into a known-working charger. This requires a hardware swap (RMA).",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-002",
+    "title": "Toast Go 2 App Crashes / 'Toast POS has stopped'",
+    "category": "Hardware - Handheld",
+    "keywords": [
+      "app crash",
+      "toast pos has stopped",
+      "freezes",
+      "crash loop",
+      "frozen",
+      "not responding",
+      "force stop",
+      "clear cache"
+    ],
+    "summary": "The Toast POS app freezes mid-order or shows a fatal crash message. Clearing the app cache almost always resolves this.",
+    "steps": [
+      "Navigate to the Android Home Screen \u2014 the white circle with six dots.",
+      "Go to Settings > Apps > Toast POS.",
+      "Select Storage > Clear Cache, then tap Force Stop.",
+      "Relaunch the Toast POS app.",
+      "If the screen is partially distorted or half upside down after relaunching, that is a hardware fault \u2014 do not clear data, call support."
+    ],
+    "escalate_if": "Screen is distorted or partially upside down after clearing cache \u2014 this indicates a hardware fault.",
+    "critical_warning": "NEVER select 'Clear Data' or uninstall the app if there are unsynced payments in the queue. Those offline credit card captures will be permanently lost."
+  },
+  {
+    "id": "kb-003",
+    "title": "Handheld Orders Not Printing to Kitchen",
+    "category": "Hardware - Handheld",
+    "keywords": [
+      "handheld",
+      "orders not printing",
+      "kitchen",
+      "ticket",
+      "toast go",
+      "no print",
+      "missing tickets",
+      "wifi"
+    ],
+    "summary": "Orders entered on the Toast Go are not appearing in the kitchen. Usually a Wi-Fi connection or printer routing issue.",
+    "steps": [
+      "Check if other terminals in the restaurant are printing to the same printer successfully.",
+      "Swipe down from the top of the Toast Go screen and verify Wi-Fi is enabled and connected to the Toast Managed Network SSID \u2014 not the restaurant's guest Wi-Fi.",
+      "Navigate to Device Setup inside the app and ensure the correct printer is selected under the receipt and prep station headers."
+    ],
+    "escalate_if": "Other terminals print fine but Toast Go still cannot \u2014 likely a device-specific network fault.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-004",
+    "title": "Universal Printer Error / 'Please Reboot Printer'",
+    "category": "Hardware - Printer",
+    "keywords": [
+      "printer error",
+      "please reboot printer",
+      "printer offline",
+      "no print",
+      "printer not working",
+      "reboot printer"
+    ],
+    "summary": "A universal error is blocking all print jobs. A full power cycle of the printer resolves most cases.",
+    "steps": [
+      "Unplug BOTH the power cable AND the Ethernet network cable from the back of the printer.",
+      "Wait exactly 30 seconds for the internal cache to fully discharge.",
+      "Plug both cables back in firmly, then turn the printer on.",
+      "If the issue persists, swap the Ethernet cable with a known-working cable from a functional station to rule out a bad line."
+    ],
+    "escalate_if": "Issue persists after cable swap \u2014 likely a hardware fault requiring replacement.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-005",
+    "title": "Receipts Printing Blank / No Ink on Slips",
+    "category": "Hardware - Printer",
+    "keywords": [
+      "blank receipt",
+      "no ink",
+      "blank slip",
+      "paper feeding",
+      "nothing printed",
+      "white receipt"
+    ],
+    "summary": "The printer feeds paper but nothing is printed. Toast printers are thermal \u2014 blank paper means the roll is installed backwards.",
+    "steps": [
+      "Open the printer cover.",
+      "Flip the paper roll over so the glossy side faces toward the front status LED lights.",
+      "Ensure the paper feeds from the bottom of the roll, not the top.",
+      "Close the cover and test print."
+    ],
+    "escalate_if": "Paper is installed correctly but receipts are still blank \u2014 possible thermal head failure.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-006",
+    "title": "TP200 Receipt Printer Red Flashing Light",
+    "category": "Hardware - Printer",
+    "keywords": [
+      "red light",
+      "flashing red",
+      "printer light",
+      "tp200",
+      "buzzing",
+      "printer alarm",
+      "status light"
+    ],
+    "summary": "The TP200 printer has a red flashing status light. The meaning depends on whether it is flashing only or flashing with buzzing.",
+    "steps": [
+      "Flashing Red only: The top cover is unlatched or paper is jammed in the auto-cutter. Clear any paper fragments and firmly close the door.",
+      "Flashing Red with constant buzzing: This is a serious internal hardware malfunction. If under warranty, trigger an immediate RMA replacement.",
+      "Blue light only: The printer is in sleep mode. Tap the power button once to wake it."
+    ],
+    "escalate_if": "Flashing red with constant buzzing \u2014 requires RMA replacement if under warranty.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-007",
+    "title": "Hardwired Terminal No Network Connection (Toast Flex / KDS)",
+    "category": "Network - Wired",
+    "keywords": [
+      "no network",
+      "no connection",
+      "toast flex",
+      "kds",
+      "kitchen display",
+      "ethernet",
+      "offline",
+      "network banner",
+      "fixed terminal"
+    ],
+    "summary": "A stationary terminal or KDS shows 'No Network Connection'. Fixed terminals must use Ethernet only \u2014 Wi-Fi must be disabled.",
+    "steps": [
+      "CRITICAL: Swipe down from the top of the terminal screen and ensure Wi-Fi is completely DISABLED. Toast Flex and KDS terminals must run exclusively on wired Ethernet.",
+      "Check that the Ethernet cable is securely clicked into the terminal base or printer wall jack.",
+      "Trace the physical cable path back to the network switch or Meraki router and check for loose connections."
+    ],
+    "escalate_if": "Ethernet is secure and Wi-Fi is off but terminal still shows no connection \u2014 likely a switch or router port issue.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-008",
+    "title": "Checking Toast Managed Network Router Status",
+    "category": "Network - Router",
+    "keywords": [
+      "router",
+      "internet down",
+      "whole restaurant offline",
+      "meraki",
+      "pronto",
+      "no internet",
+      "status light",
+      "router light"
+    ],
+    "summary": "The entire restaurant lost cloud connection simultaneously. Check the router status light to determine if this is a Toast issue or ISP outage.",
+    "steps": [
+      "Pronto Router: Check the second status light from the left. Solid green means it has internet.",
+      "Cisco Meraki Router: Look at the single status light on the front panel. It must be solid white or solid green.",
+      "Amber or solid orange light on either router: The router has power but the ISP line is completely down. Contact your local cable or fiber provider immediately \u2014 this is NOT a Toast issue."
+    ],
+    "escalate_if": "Router lights are solid green/white but terminals still show offline \u2014 escalate to Toast support.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-009",
+    "title": "Operating in Offline Mode During an Internet Outage",
+    "category": "Network - Outage",
+    "keywords": [
+      "offline mode",
+      "internet outage",
+      "no internet",
+      "outage",
+      "background processing",
+      "offline transactions",
+      "dinner rush",
+      "service disruption"
+    ],
+    "summary": "An internet outage is happening during service. Toast automatically handles this \u2014 the most important thing is to NOT restart anything.",
+    "steps": [
+      "Tell the operator: Do NOT restart, unplug, or reset any routers, terminals, or printers.",
+      "Toast automatically detects the outage and switches to Background Credit Card Processing.",
+      "Transactions are locally encrypted and stored on the hardware.",
+      "All transactions will auto-capture the moment the router regains internet \u2014 no action needed."
+    ],
+    "escalate_if": "Outage lasts more than 30 minutes or operator reports transactions not capturing after internet is restored.",
+    "critical_warning": "Do NOT restart any equipment during an active outage. This can cause loss of locally stored offline transactions."
+  },
+  {
+    "id": "kb-010",
+    "title": "Cash Drawer Won't Open / 'USB Device Not Found'",
+    "category": "Hardware - Cash Drawer",
+    "keywords": [
+      "cash drawer",
+      "won't open",
+      "usb device not found",
+      "register",
+      "cash sale",
+      "drawer not opening"
+    ],
+    "summary": "The cash drawer does not open when a cash sale is completed. Usually a cable or app initialization issue.",
+    "steps": [
+      "Check the RJ12 cable running from the bottom of the cash drawer to the back of the receipt printer.",
+      "Ensure the cable is plugged into the Drawer port, NOT the Ethernet port \u2014 these look similar.",
+      "Navigate to Settings > Apps > Toast POS, Force Stop the app, then reopen it to re-initialize the USB accessory bus."
+    ],
+    "escalate_if": "Cable is correct and app restart does not resolve \u2014 possible hardware fault with the drawer or printer port.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-011",
+    "title": "Printing a Diagnostic Report to Find Printer IP Address",
+    "category": "Hardware - Printer",
+    "keywords": [
+      "ip address",
+      "diagnostic",
+      "printer ip",
+      "network report",
+      "feed button",
+      "0.0.0.0",
+      "diagnostic report"
+    ],
+    "summary": "Deeper network issues require the printer's IP address. You can print a diagnostic slip directly from the printer hardware.",
+    "steps": [
+      "Turn the printer power completely off.",
+      "Press and hold the gray Feed button.",
+      "While still holding Feed, turn the power back on.",
+      "Release the Feed button the instant you hear printing sounds begin.",
+      "The printer will print a slip showing its IP Address, Subnet, and Gateway.",
+      "If the IP shows 0.0.0.0, the printer is not receiving a network address from the router \u2014 the network connection is broken."
+    ],
+    "escalate_if": "IP shows 0.0.0.0 after confirming Ethernet cable is plugged in \u2014 escalate to Toast network support.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-012",
+    "title": "Manager Can't Close the Day / 'Open Checks' Error",
+    "category": "POS Operations - End of Day",
+    "keywords": [
+      "close day",
+      "end of day",
+      "open checks",
+      "close out",
+      "end day grayed out",
+      "unclosed checks",
+      "clock out",
+      "closeout blocked"
+    ],
+    "summary": "Toast is blocking the Close Out Day routine due to open checks or employees who haven't clocked out. Each blocker must be cleared.",
+    "steps": [
+      "Navigate to the main POS menu and select Manager Activities > Close Out Day.",
+      "Review the list of blocker items shown.",
+      "For unclosed checks in 'Paid' status: select Close Checks to force them closed. The system will close with a $0.00 tip if no tip was entered \u2014 adjust tips manually first if needed.",
+      "For employees who forgot to clock out: select Clock Out All to immediately force-terminate all open shifts.",
+      "If the End Day button remains grayed out after clearing all checks and employees: force-close the Toast app, restart the terminal, then check the Meraki router network status light."
+    ],
+    "escalate_if": "End Day remains grayed out after app restart and all checks and employees are cleared.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-013",
+    "title": "Reports Locked or Missing in Toast Web Back-End",
+    "category": "POS Operations - Reporting",
+    "keywords": [
+      "locked report",
+      "missing report",
+      "toast web",
+      "back office",
+      "lock icon",
+      "sales report",
+      "permissions",
+      "analytics",
+      "tip summary"
+    ],
+    "summary": "A manager can't see or access a report in Toast Web. This is either a browser cache issue or a user permissions restriction.",
+    "steps": [
+      "First, open a Google Chrome Incognito Window and log into Toast Web again.",
+      "If the report appears in Incognito: the cause is an overloaded browser cache. Clear the regular browser cache and cookies, close all Toast tabs, and log back in normally.",
+      "If the report is missing or locked even in Incognito: this is a permissions restriction.",
+      "A user with 8.2 User Permissions must go to Employees > Employee Management, find the manager's profile, go to the Jobs and Permissions tab, and toggle the required permission \u2014 for example, 4.1 Sales Reports."
+    ],
+    "escalate_if": "Permissions are correct but reports are still inaccessible \u2014 possible account-level restriction requiring Toast support.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-014",
+    "title": "Shift Review Discrepancy / Cash Miscalculation",
+    "category": "POS Operations - Reporting",
+    "keywords": [
+      "cash discrepancy",
+      "shift review",
+      "cash collected",
+      "wrong amount",
+      "cash in hand",
+      "cash in drawer",
+      "drawer history",
+      "cash off"
+    ],
+    "summary": "An employee's end-of-shift cash amount doesn't match what's in their hand. Usually caused by drawer assignment or transactions logged under the wrong employee.",
+    "steps": [
+      "Check the tracking column on the POS to understand Cash in Hand vs. Cash in Drawer reporting.",
+      "Go to Setup > Device Setup on that specific terminal and verify which receipt printer the cash drawer is assigned to.",
+      "In Toast Web, run Reports > Cash and Loss Management > Drawer History for that specific day.",
+      "If a cash transaction was accidentally rung under a different employee's profile, use the Update Entries button in Toast Web to manually adjust the cash collected balance."
+    ],
+    "escalate_if": "Entries cannot be corrected via Update Entries \u2014 may require Toast support to adjust at the account level.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-015",
+    "title": "Not Receiving DoorDash, Grubhub, or Uber Eats Orders",
+    "category": "Third-Party Integrations",
+    "keywords": [
+      "doordash",
+      "grubhub",
+      "uber eats",
+      "third party",
+      "delivery orders",
+      "orders not coming in",
+      "orders hub",
+      "online ordering",
+      "integration"
+    ],
+    "summary": "Delivery orders are not appearing in Toast even though drivers are arriving. Check Toast's integration toggle and menu visibility first.",
+    "steps": [
+      "In Toast Web, go to Takeout & Delivery > Third-Party Ordering and verify the master toggle is set to All On. If it shows Snoozed or All Off, all integrations are paused \u2014 toggle it on.",
+      "Go to Menus > Menu Management > Menu Manager. Click your delivery menu and verify visibility is explicitly set to 'Online Ordering: Partners'. If not set, third-party platforms cannot see the menu.",
+      "If the menu is visible and active in Toast and orders are still not coming through, the issue is on the partner platform side \u2014 such as an account suspension or outdated banking info. The merchant must contact DoorDash, Grubhub, or Uber Eats merchant support directly."
+    ],
+    "escalate_if": "Toast configuration is correct but orders are still not coming in \u2014 this is a third-party platform issue outside Toast's control.",
+    "critical_warning": null
+  },
+  {
+    "id": "kb-016",
+    "title": "Third-Party Orders Not Auto-Firing to Kitchen",
+    "category": "Third-Party Integrations",
+    "keywords": [
+      "auto fire",
+      "orders not printing",
+      "kitchen",
+      "manual fire",
+      "online orders",
+      "auto-fire device",
+      "third party",
+      "doordash",
+      "uber eats"
+    ],
+    "summary": "Orders appear in the Orders Hub but never print to the kitchen automatically, forcing staff to manually fire every ticket.",
+    "steps": [
+      "Toast requires a designated Auto-Fire Device to act as the automated gateway for online orders.",
+      "In Toast Web, go to Takeout & Delivery > Availability > Online Ordering and review the Auto-Fire configuration.",
+      "Ensure a fixed, hardwired terminal such as a Toast Flex is selected as the Auto-Fire device. NEVER use a Toast Go handheld \u2014 they go to sleep or lose connection too easily.",
+      "Ensure the designated Auto-Fire terminal is powered on, plugged into Ethernet, and actively logged into the Toast POS app on the floor.",
+      "If it is turned off or asleep, automatic printing breaks for the entire restaurant."
+    ],
+    "escalate_if": "Auto-Fire terminal is correctly configured and active but orders still do not fire automatically \u2014 escalate to Toast support.",
+    "critical_warning": null
+  }
+]
